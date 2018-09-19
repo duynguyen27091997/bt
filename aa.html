@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#aa{
+
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+		#b{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			transition: 0.3s;
+			transition-delay: 1s;
+		}
+		#c{
+			position: absolute;
+			top: 0;
+			left: 100px;
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			transition: 0.3s;
+			transition-delay: 4s;
+		}
+		#aa:hover #b{
+			top: 50px;
+		}
+		#aa:hover #c{
+			top: -50px;
+		}
+	</style>
+</head>
+<body>
+	<div id="aa">
+		<div id="b"></div>
+		<div id="c"></div>
+	</div>
+</body>
+</html>
